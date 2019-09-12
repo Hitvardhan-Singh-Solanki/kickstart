@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
+    "coverage": "nyc npm run test",
     "dev": "node server.js",
     "build": "next build"
   },
@@ -22,6 +23,9 @@
     "semantic-ui-react": "^0.77.1",
     "solc": "^0.4.19",
     "truffle-hdwallet-provider": "0.0.3",
-    "web3": "1.0.0-beta.26"
+    "web3": "^1.2.1"
+  },
+  "devDependencies": {
+    "nyc": "^14.1.1"
   }
 }
