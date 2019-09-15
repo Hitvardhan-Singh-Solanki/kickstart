@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha",
     "coverage": "nyc npm run test",
+    "compile-deploy": "node ethereum/compile.js && node ethereum/deploy.js",
     "dev": "node server.js",
     "build": "next build"
   },
@@ -23,7 +24,7 @@
     "semantic-ui-react": "^0.77.1",
     "solc": "^0.4.19",
     "truffle-hdwallet-provider": "0.0.3",
-    "web3": "^1.2.1"
+    "web3": "^1.0.0-beta.26"
   },
   "devDependencies": {
     "nyc": "^14.1.1"
